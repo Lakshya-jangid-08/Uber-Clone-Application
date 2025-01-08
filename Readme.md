@@ -86,3 +86,25 @@ curl -X POST http://localhost:3000/user/registration \
 - The email should be a valid email address.
 
 For more details, refer to the `user.controller.js` and `user.service.js` files.
+
+# User Registration Guide
+
+This guide will help you register a new user with an email, first name, last name, and password.
+
+## API Endpoint
+
+**URL:** `/user/registeration`  
+**Method:** `POST`  
+**Content-Type:** `application/json`
+
+## Request Body
+
+```json
+{
+    "Username": {
+        "first_name": "John",
+        "last_name": "Doe"
+    },
+    "Email": "john.doe@example.com",
+    "Password": "yourpassword"
+}
