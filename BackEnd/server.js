@@ -6,6 +6,10 @@
 const http = require('http');
 const app = require('./app');
 const connect_to_DB = require('./DB/DB')
+const cors = require('cors');
+app.use(cors());
+
+connect_to_DB();
 
 const server = http.createServer(app);
 

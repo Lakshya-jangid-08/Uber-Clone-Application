@@ -31,7 +31,7 @@ function CaptainForm() {
                 VehicleType : VehicleType
             }
         } 
-                                                              // /captain/register
+                                                     // /captain/register
         const response = await axios.post(`${import.meta.env.VITE_url}/captain/register`,CaptainData);
         if(response.status == 200){
             const data = response.data;

@@ -40,7 +40,8 @@ module.exports.LoginCaptain = async function(req,res) {
     }
 
     const token = captain.GenToken();
-    // res.cookie("token",token);
+    res.cookie("token",token);
+    console.log(cookies);
 
     return res.status(200).json({token,captain})
 }
